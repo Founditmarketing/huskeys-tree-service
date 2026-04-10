@@ -16,6 +16,7 @@ import Gallery from './pages/Gallery';
 import Reviews from './pages/Reviews';
 import Firewood from './pages/Firewood';
 import Blog from './pages/Blog';
+import BlogPost from './pages/BlogPost';
 import Contact from './pages/Contact';
 import Privacy from './pages/Privacy';
 import ThankYou from './pages/ThankYou';
@@ -34,6 +35,7 @@ export default function App() {
             <Route path="/reviews" element={<Reviews />} />
             <Route path="/firewood" element={<Firewood />} />
             <Route path="/blog" element={<Blog />} />
+            <Route path="/blog/:id" element={<BlogPost />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/privacy" element={<Privacy />} />
             <Route path="/thank-you" element={<ThankYou />} />

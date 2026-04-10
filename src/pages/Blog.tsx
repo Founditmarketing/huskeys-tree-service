@@ -14,8 +14,8 @@ const PHOTOS = [
 const posts = [
   {
     id: 1,
-    title: 'When is the Best Time to Trim Your Trees in Tennessee?',
-    excerpt: 'Timing is everything when it comes to tree health. Learn why late winter is often the ideal time for pruning in the Clarksville area.',
+    title: 'When Is the Best Time to Trim Your Trees in Tennessee?',
+    excerpt: 'Timing your tree pruning correctly can mean the difference between a thriving tree and one that struggles for years. Learn why late winter is the gold standard for most Tennessee hardwoods, when summer pruning is acceptable, and the species-specific rules every Clarksville homeowner should know.',
     date: 'Oct 15, 2023',
     author: 'Jared Huskey',
     category: 'Tree Care',
@@ -24,7 +24,7 @@ const posts = [
   {
     id: 2,
     title: '5 Signs Your Tree Might Be Hazardous',
-    excerpt: 'Don\'t wait for a storm to find out your tree is unstable. Here are the warning signs every homeowner should watch for.',
+    excerpt: 'After 30 years in the tree business, Jared has learned to spot the warning signs of a dangerous tree long before it fails. From dead branches and mushroom growth to worsening lean and trunk cracks — here are five things every homeowner should watch for.',
     date: 'Sep 28, 2023',
     author: 'Jared Huskey',
     category: 'Safety',
@@ -33,7 +33,7 @@ const posts = [
   {
     id: 3,
     title: 'The Benefits of Professional Stump Grinding',
-    excerpt: 'Leftover stumps are more than just an eyesore. Discover why professional grinding is essential for your property\'s health.',
+    excerpt: 'That leftover stump isn\'t just an eyesore — it\'s a pest magnet, a mowing hazard, and a source of aggressive regrowth. Learn why professional grinding is a smart investment and why DIY rental grinders aren\'t worth the risk.',
     date: 'Sep 10, 2023',
     author: 'Jared Huskey',
     category: 'Services',
@@ -42,7 +42,7 @@ const posts = [
   {
     id: 4,
     title: 'Preparing Your Trees for Winter Storms',
-    excerpt: 'Middle Tennessee winters can be unpredictable. Learn how to protect your property from ice and wind damage.',
+    excerpt: 'Ice storms, heavy snow, and high winds — Middle Tennessee winters can be brutal on your trees. From crown thinning for wind resistance to identifying your "risk species," here\'s how to protect your property before the cold arrives.',
     date: 'Aug 22, 2023',
     author: 'Jared Huskey',
     category: 'Maintenance',

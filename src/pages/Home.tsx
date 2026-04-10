@@ -78,8 +78,8 @@ export default function Home() {
             className="w-full h-full"
           >
             <img 
-              src={PHOTOS[0]} 
-              alt="Tree work background" 
+              src="https://images.unsplash.com/photo-1542273917363-3b1817f69a2d?auto=format&fit=crop&q=80&w=2000" 
+              alt="Forest background" 
               className="w-full h-full object-cover animate-ken-burns"
               referrerPolicy="no-referrer"
             />
