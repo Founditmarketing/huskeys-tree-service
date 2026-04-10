@@ -22,9 +22,18 @@ import {
 import SEO from '../components/SEO';
 import Section from '../components/Section';
 import Counter from '../components/Counter';
-import BeforeAfterSlider from '../components/BeforeAfterSlider';
 import TestimonialCarousel from '../components/TestimonialCarousel';
 import { cn } from '@/src/lib/utils';
+
+const PHOTOS = [
+  'https://lh3.googleusercontent.com/geougc-cs/ABOP9pvh6DhpokLOB7Q6CXVy-UW18W2yl9seRCNX4n1EN9JSgEJtGh-SIOVOme25gTfi2-T-1WQiVe5mzx2brLM8WR27o94AtGcA71C2Xcl9Lf3XKr-HqBEirKQN9usnGOdf3kI37V_grcHDrcqb',
+  'https://lh3.googleusercontent.com/geougc-cs/ABOP9psPo675ReW98BpA1szrUoq2TX-D_NIjAk7_dtMPJekoizICVTHJ5EEXJMwx-m6bQN2ZcX3w5LP14UMdWLHUt1nv2OD4RqzKbM_p98CXAOrI3NuRMQuUXZ455lUb-Sg7QRk9XhxMvyy7uU0J',
+  'https://lh3.googleusercontent.com/geougc-cs/ABOP9ptcu8bxwVCQxGqES3fThAfFmhoEQPpjgWM71G_NHdsybYlJHAVj1f6WBJYtl_jSPJgdSvnMNQ-NdWQrNXO4qeINloKaS-fiSUvEbmjPVoRjaucTDqXf7Fvno4UlR_oNuFglN2Zl0YSe7u_X',
+  'https://lh3.googleusercontent.com/geougc-cs/ABOP9psKAhQRRZOmE2onXPlmFB4u6mkpW3Nj4Q1xGpp3mfZRMA5f331KSnR0If_3ABZqpiQfsAm74oogmLdxTHfwTe1YQ2yIsDycC0UzBkkeSO3htDx-qOJRovZhNVGiSrbKpfQrrtYc_eI_eGY',
+  'https://lh3.googleusercontent.com/geougc-cs/ABOP9puLEUa6xvWZXDyHEvAv_IDDcZjBbl84OGBnI8DfqR6e1b79zPR-HZ-CbqvIaCDuSljmHh2UbVHGQdkUNjD_MbBosfddaWNA9S7vw5MKRD-5CdaRNfr0aXhLzYhC376Tl3keT115ESLlDDhr',
+  'https://lh3.googleusercontent.com/geougc-cs/ABOP9ptsZP7ey6JJ7JkG0-_NUH9xi08X-_dvucL-nqvnm_koFinLyXFZobrzIEzKQ_L1qY4UBe6kq2_8uMrKG4bFGD124zi1Ywemf3R5gj0W6su09AY6pFUksXooKvPcg9gOIU8O8-l9',
+  'https://lh3.googleusercontent.com/geougc-cs/ABOP9pvB8hp6jpWpPjnneoSR29d4orUv6QjLycl22C9fatAUiacAwOzegp7LPOxFN-ZfVXysisu8h2E5AxjeNbG3-YegWQvasSEmQ2cz9UG0E1ZiFipfv7FPC0lcMmpmzibNgw_SAm1Dcg',
+];
 
 const TypewriterText = ({ text, delay = 0 }: { text: string; delay?: number }) => {
   const characters = text.split("");
@@ -67,7 +76,7 @@ export default function Home() {
             className="w-full h-full"
           >
             <img 
-              src="https://images.unsplash.com/photo-1542273917363-3b1817f69a2d?auto=format&fit=crop&q=80&w=2000" 
+              src={PHOTOS[0]} 
               alt="Tree work background" 
               className="w-full h-full object-cover animate-ken-burns"
               referrerPolicy="no-referrer"
@@ -257,32 +266,13 @@ export default function Home() {
             <p className="text-xl text-gray-400 max-w-2xl mx-auto">Real results from real jobs in the Clarksville area.</p>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-12">
-            <div className="space-y-6">
-              <h3 className="text-2xl flex items-center gap-3">
-                <span className="w-8 h-8 bg-brand-orange rounded-full flex items-center justify-center text-sm">01</span>
-                Before & After Precision
-              </h3>
-              <BeforeAfterSlider 
-                beforeImage="https://images.unsplash.com/photo-1542273917363-3b1817f69a2d?auto=format&fit=crop&q=80&w=1000" 
-                afterImage="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&q=80&w=1000" 
-              />
-            </div>
-            <div className="grid grid-cols-2 gap-4">
-              {[
-                { img: "https://picsum.photos/seed/tree1/600/600", label: "Tree Removal" },
-                { img: "https://picsum.photos/seed/tree2/600/600", label: "Trimming" },
-                { img: "https://picsum.photos/seed/tree3/600/600", label: "Stump Grinding" },
-                { img: "https://picsum.photos/seed/tree4/600/600", label: "Lot Clearing" },
-              ].map((item, i) => (
-                <div key={i} className="group relative aspect-square overflow-hidden rounded-lg">
-                  <img src={item.img} alt={item.label} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" referrerPolicy="no-referrer" />
-                  <div className="absolute inset-0 bg-brand-orange/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center p-4">
-                    <span className="text-white font-display text-xl text-center">{item.label}</span>
-                  </div>
-                </div>
-              ))}
-            </div>
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-12">
+            {PHOTOS.slice(0, 4).map((photo, i) => (
+              <div key={i} className="group relative aspect-square overflow-hidden rounded-lg">
+                <img src={photo} alt="Huskey's Tree Service work" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" referrerPolicy="no-referrer" />
+                <div className="absolute inset-0 bg-brand-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+              </div>
+            ))}
           </div>
 
           <div className="text-center">
@@ -389,8 +379,8 @@ export default function Home() {
             <div className="relative">
               <div className="absolute -top-4 -left-4 w-24 h-24 border-t-4 border-l-4 border-brand-orange z-10" />
               <img 
-                src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=800" 
-                alt="Jared Huskey" 
+                src={PHOTOS[4]} 
+                alt="Huskey's Tree Service" 
                 className="rounded-xl shadow-2xl grayscale hover:grayscale-0 transition-all duration-700"
                 referrerPolicy="no-referrer"
               />
@@ -431,8 +421,8 @@ export default function Home() {
       <section className="relative py-32 overflow-hidden bg-brand-black">
         <div className="absolute inset-0 z-0 opacity-30">
           <img 
-            src="https://images.unsplash.com/photo-1520114878144-6123749968dd?auto=format&fit=crop&q=80&w=2000" 
-            alt="Firewood background" 
+            src={PHOTOS[5]} 
+            alt="Huskey's Tree Service work" 
             className="w-full h-full object-cover"
             referrerPolicy="no-referrer"
           />
@@ -480,19 +470,19 @@ export default function Home() {
                 title: "When is the Best Time to Trim Your Trees?", 
                 date: "Oct 12, 2025", 
                 excerpt: "Understanding the seasonal cycles of your Tennessee trees can save you money and prevent disease.",
-                img: "https://picsum.photos/seed/blog1/800/600"
+                img: PHOTOS[1]
               },
               { 
                 title: "5 Signs Your Tree is a Safety Hazard", 
                 date: "Nov 05, 2025", 
                 excerpt: "Don't wait for the next storm. Learn how to spot internal rot and structural weakness before it's too late.",
-                img: "https://picsum.photos/seed/blog2/800/600"
+                img: PHOTOS[2]
               },
               { 
                 title: "The Benefits of Professional Stump Grinding", 
                 date: "Dec 20, 2025", 
                 excerpt: "More than just aesthetics—removing stumps prevents pests and improves your property value.",
-                img: "https://picsum.photos/seed/blog3/800/600"
+                img: PHOTOS[3]
               },
             ].map((post, i) => (
               <motion.div 

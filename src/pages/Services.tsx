@@ -14,6 +14,16 @@ import SEO from '../components/SEO';
 import Section from '../components/Section';
 import { cn } from '../lib/utils';
 
+const PHOTOS = [
+  'https://lh3.googleusercontent.com/geougc-cs/ABOP9pvh6DhpokLOB7Q6CXVy-UW18W2yl9seRCNX4n1EN9JSgEJtGh-SIOVOme25gTfi2-T-1WQiVe5mzx2brLM8WR27o94AtGcA71C2Xcl9Lf3XKr-HqBEirKQN9usnGOdf3kI37V_grcHDrcqb',
+  'https://lh3.googleusercontent.com/geougc-cs/ABOP9psPo675ReW98BpA1szrUoq2TX-D_NIjAk7_dtMPJekoizICVTHJ5EEXJMwx-m6bQN2ZcX3w5LP14UMdWLHUt1nv2OD4RqzKbM_p98CXAOrI3NuRMQuUXZ455lUb-Sg7QRk9XhxMvyy7uU0J',
+  'https://lh3.googleusercontent.com/geougc-cs/ABOP9ptcu8bxwVCQxGqES3fThAfFmhoEQPpjgWM71G_NHdsybYlJHAVj1f6WBJYtl_jSPJgdSvnMNQ-NdWQrNXO4qeINloKaS-fiSUvEbmjPVoRjaucTDqXf7Fvno4UlR_oNuFglN2Zl0YSe7u_X',
+  'https://lh3.googleusercontent.com/geougc-cs/ABOP9psKAhQRRZOmE2onXPlmFB4u6mkpW3Nj4Q1xGpp3mfZRMA5f331KSnR0If_3ABZqpiQfsAm74oogmLdxTHfwTe1YQ2yIsDycC0UzBkkeSO3htDx-qOJRovZhNVGiSrbKpfQrrtYc_eI_eGY',
+  'https://lh3.googleusercontent.com/geougc-cs/ABOP9puLEUa6xvWZXDyHEvAv_IDDcZjBbl84OGBnI8DfqR6e1b79zPR-HZ-CbqvIaCDuSljmHh2UbVHGQdkUNjD_MbBosfddaWNA9S7vw5MKRD-5CdaRNfr0aXhLzYhC376Tl3keT115ESLlDDhr',
+  'https://lh3.googleusercontent.com/geougc-cs/ABOP9ptsZP7ey6JJ7JkG0-_NUH9xi08X-_dvucL-nqvnm_koFinLyXFZobrzIEzKQ_L1qY4UBe6kq2_8uMrKG4bFGD124zi1Ywemf3R5gj0W6su09AY6pFUksXooKvPcg9gOIU8O8-l9',
+  'https://lh3.googleusercontent.com/geougc-cs/ABOP9pvB8hp6jpWpPjnneoSR29d4orUv6QjLycl22C9fatAUiacAwOzegp7LPOxFN-ZfVXysisu8h2E5AxjeNbG3-YegWQvasSEmQ2cz9UG0E1ZiFipfv7FPC0lcMmpmzibNgw_SAm1Dcg',
+];
+
 const services = [
   {
     id: 'removal',
@@ -21,7 +31,7 @@ const services = [
     icon: <Trees size={48} />,
     desc: 'Sometimes, removal is the only safe option. Whether a tree is dead, diseased, or posing a structural threat to your property, we have the equipment and expertise to take it down safely.',
     features: ['Hazardous Tree Assessment', 'Precision Felling', 'Technical Rigging', 'Complete Cleanup'],
-    img: 'https://images.unsplash.com/photo-1542273917363-3b1817f69a2d?auto=format&fit=crop&q=80&w=1000'
+    img: PHOTOS[0]
   },
   {
     id: 'trimming',
@@ -29,7 +39,7 @@ const services = [
     icon: <Scissors size={48} />,
     desc: 'Proper trimming is essential for tree health and property safety. We remove deadwood, thin out dense canopies, and shape trees to enhance their natural beauty and longevity.',
     features: ['Crown Thinning', 'Deadwood Removal', 'Structural Pruning', 'Aesthetic Shaping'],
-    img: 'https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&q=80&w=1000'
+    img: PHOTOS[1]
   },
   {
     id: 'emergency',
@@ -37,7 +47,7 @@ const services = [
     icon: <AlertTriangle size={48} />,
     desc: 'Storms don\'t wait for business hours. When a tree falls on your home, car, or power lines, our crew is ready to respond immediately to mitigate damage and restore safety.',
     features: ['Storm Damage Response', 'Hazardous Limb Removal', 'Insurance Claim Assistance', 'Rapid Mobilization'],
-    img: 'https://images.unsplash.com/photo-1520114878144-6123749968dd?auto=format&fit=crop&q=80&w=1000'
+    img: PHOTOS[2]
   },
   {
     id: 'stump',
@@ -45,7 +55,7 @@ const services = [
     icon: <CircleDot size={48} />,
     desc: 'Don\'t let old stumps ruin your curb appeal or attract pests. We use high-powered grinders to turn stumps into mulch, allowing you to replant or regrass the area.',
     features: ['Deep Root Grinding', 'Surface Root Removal', 'Mulch Backfilling', 'Site Restoration'],
-    img: 'https://images.unsplash.com/photo-1502082553048-f009c37129b9?auto=format&fit=crop&q=80&w=1000'
+    img: PHOTOS[3]
   },
   {
     id: 'clearing',
@@ -53,7 +63,7 @@ const services = [
     icon: <Trash2 size={48} />,
     desc: 'Preparing for new construction or just want to reclaim your backyard? We clear brush, small trees, and debris to give you a clean slate for your next project.',
     features: ['Underbrush Removal', 'Selective Clearing', 'Debris Hauling', 'Grading Preparation'],
-    img: 'https://images.unsplash.com/photo-1473448912268-2022ce9509d8?auto=format&fit=crop&q=80&w=1000'
+    img: PHOTOS[4]
   },
   {
     id: 'firewood',
@@ -61,7 +71,7 @@ const services = [
     icon: <Flame size={48} />,
     desc: 'We supply premium hardwood firewood that has been seasoned to ensure a clean, hot burn. Available for delivery or pickup throughout the Clarksville area.',
     features: ['Hardwood Mix', 'Seasoned 6-12 Months', 'Custom Split Sizes', 'Delivery Available'],
-    img: 'https://images.unsplash.com/photo-1520114878144-6123749968dd?auto=format&fit=crop&q=80&w=1000'
+    img: PHOTOS[5]
   }
 ];
 
@@ -76,7 +86,7 @@ export default function Services() {
       {/* Page Header */}
       <section className="relative pt-40 pb-20 overflow-hidden">
         <div className="absolute inset-0 opacity-20">
-          <img src="https://images.unsplash.com/photo-1511497584788-876760111969?auto=format&fit=crop&q=80&w=2000" alt="Forest" className="w-full h-full object-cover" referrerPolicy="no-referrer" />
+          <img src={PHOTOS[6]} alt="Tree work" className="w-full h-full object-cover" referrerPolicy="no-referrer" />
           <div className="absolute inset-0 bg-gradient-to-b from-transparent to-brand-black" />
         </div>
         <div className="relative z-10 max-w-7xl mx-auto px-4 text-center">

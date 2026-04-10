@@ -3,27 +3,33 @@ import { Flame, Truck, Clock, CheckCircle2, Phone, ShoppingCart } from 'lucide-r
 import SEO from '../components/SEO';
 import Section from '../components/Section';
 
+const PHOTOS = [
+  'https://lh3.googleusercontent.com/geougc-cs/ABOP9pvh6DhpokLOB7Q6CXVy-UW18W2yl9seRCNX4n1EN9JSgEJtGh-SIOVOme25gTfi2-T-1WQiVe5mzx2brLM8WR27o94AtGcA71C2Xcl9Lf3XKr-HqBEirKQN9usnGOdf3kI37V_grcHDrcqb',
+  'https://lh3.googleusercontent.com/geougc-cs/ABOP9psPo675ReW98BpA1szrUoq2TX-D_NIjAk7_dtMPJekoizICVTHJ5EEXJMwx-m6bQN2ZcX3w5LP14UMdWLHUt1nv2OD4RqzKbM_p98CXAOrI3NuRMQuUXZ455lUb-Sg7QRk9XhxMvyy7uU0J',
+  'https://lh3.googleusercontent.com/geougc-cs/ABOP9ptcu8bxwVCQxGqES3fThAfFmhoEQPpjgWM71G_NHdsybYlJHAVj1f6WBJYtl_jSPJgdSvnMNQ-NdWQrNXO4qeINloKaS-fiSUvEbmjPVoRjaucTDqXf7Fvno4UlR_oNuFglN2Zl0YSe7u_X',
+];
+
 const products = [
   {
     title: 'Face Cord',
     price: '$125',
     desc: 'Perfect for occasional weekend fires. A face cord is 4ft high by 8ft long, one log deep (approx 16").',
     features: ['Seasoned Hardwood', 'Easy to Stack', 'Pickup or Delivery'],
-    img: 'https://images.unsplash.com/photo-1520114878144-6123749968dd?auto=format&fit=crop&q=80&w=800'
+    img: PHOTOS[0]
   },
   {
     title: 'Full Cord',
     price: '$350',
     desc: 'The standard for winter heating. A full cord is 4ft high by 4ft wide by 8ft long (128 cubic feet).',
     features: ['Best Value', 'Bulk Discount', 'Free Local Delivery'],
-    img: 'https://images.unsplash.com/photo-1542273917363-3b1817f69a2d?auto=format&fit=crop&q=80&w=800'
+    img: PHOTOS[1]
   },
   {
     title: 'Pickup Load',
     price: '$75',
     desc: 'Fill your own truck bed. We\'ll help you load it up at our Woodlawn location.',
     features: ['No Delivery Fee', 'Choose Your Logs', 'Quick & Easy'],
-    img: 'https://images.unsplash.com/photo-1473448912268-2022ce9509d8?auto=format&fit=crop&q=80&w=800'
+    img: PHOTOS[2]
   }
 ];
 
@@ -38,7 +44,7 @@ export default function Firewood() {
       {/* Page Header */}
       <section className="relative pt-40 pb-20 overflow-hidden">
         <div className="absolute inset-0 opacity-30">
-          <img src="https://images.unsplash.com/photo-1520114878144-6123749968dd?auto=format&fit=crop&q=80&w=2000" alt="Firewood Stack" className="w-full h-full object-cover" referrerPolicy="no-referrer" />
+          <img src={PHOTOS[0]} alt="Tree work" className="w-full h-full object-cover" referrerPolicy="no-referrer" />
           <div className="absolute inset-0 bg-gradient-to-b from-transparent to-brand-black" />
         </div>
         <div className="relative z-10 max-w-7xl mx-auto px-4 text-center">
@@ -165,8 +171,8 @@ export default function Firewood() {
             <div className="relative">
               <div className="absolute -inset-4 border-2 border-brand-orange/20 rounded-3xl" />
               <img 
-                src="https://images.unsplash.com/photo-1520114878144-6123749968dd?auto=format&fit=crop&q=80&w=1000" 
-                alt="Firewood Stack" 
+                src={PHOTOS[2]} 
+                alt="Huskey's Tree Service work" 
                 className="relative z-10 rounded-2xl shadow-2xl"
                 referrerPolicy="no-referrer"
               />

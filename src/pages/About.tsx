@@ -4,6 +4,16 @@ import SEO from '../components/SEO';
 import Section from '../components/Section';
 import Counter from '../components/Counter';
 
+const PHOTOS = [
+  'https://lh3.googleusercontent.com/geougc-cs/ABOP9pvh6DhpokLOB7Q6CXVy-UW18W2yl9seRCNX4n1EN9JSgEJtGh-SIOVOme25gTfi2-T-1WQiVe5mzx2brLM8WR27o94AtGcA71C2Xcl9Lf3XKr-HqBEirKQN9usnGOdf3kI37V_grcHDrcqb',
+  'https://lh3.googleusercontent.com/geougc-cs/ABOP9psPo675ReW98BpA1szrUoq2TX-D_NIjAk7_dtMPJekoizICVTHJ5EEXJMwx-m6bQN2ZcX3w5LP14UMdWLHUt1nv2OD4RqzKbM_p98CXAOrI3NuRMQuUXZ455lUb-Sg7QRk9XhxMvyy7uU0J',
+  'https://lh3.googleusercontent.com/geougc-cs/ABOP9ptcu8bxwVCQxGqES3fThAfFmhoEQPpjgWM71G_NHdsybYlJHAVj1f6WBJYtl_jSPJgdSvnMNQ-NdWQrNXO4qeINloKaS-fiSUvEbmjPVoRjaucTDqXf7Fvno4UlR_oNuFglN2Zl0YSe7u_X',
+  'https://lh3.googleusercontent.com/geougc-cs/ABOP9psKAhQRRZOmE2onXPlmFB4u6mkpW3Nj4Q1xGpp3mfZRMA5f331KSnR0If_3ABZqpiQfsAm74oogmLdxTHfwTe1YQ2yIsDycC0UzBkkeSO3htDx-qOJRovZhNVGiSrbKpfQrrtYc_eI_eGY',
+  'https://lh3.googleusercontent.com/geougc-cs/ABOP9puLEUa6xvWZXDyHEvAv_IDDcZjBbl84OGBnI8DfqR6e1b79zPR-HZ-CbqvIaCDuSljmHh2UbVHGQdkUNjD_MbBosfddaWNA9S7vw5MKRD-5CdaRNfr0aXhLzYhC376Tl3keT115ESLlDDhr',
+  'https://lh3.googleusercontent.com/geougc-cs/ABOP9ptsZP7ey6JJ7JkG0-_NUH9xi08X-_dvucL-nqvnm_koFinLyXFZobrzIEzKQ_L1qY4UBe6kq2_8uMrKG4bFGD124zi1Ywemf3R5gj0W6su09AY6pFUksXooKvPcg9gOIU8O8-l9',
+  'https://lh3.googleusercontent.com/geougc-cs/ABOP9pvB8hp6jpWpPjnneoSR29d4orUv6QjLycl22C9fatAUiacAwOzegp7LPOxFN-ZfVXysisu8h2E5AxjeNbG3-YegWQvasSEmQ2cz9UG0E1ZiFipfv7FPC0lcMmpmzibNgw_SAm1Dcg',
+];
+
 export default function About() {
   return (
     <div className="bg-brand-black">
@@ -15,7 +25,7 @@ export default function About() {
       {/* Page Header */}
       <section className="relative pt-40 pb-20 overflow-hidden">
         <div className="absolute inset-0 opacity-20">
-          <img src="https://images.unsplash.com/photo-1542273917363-3b1817f69a2d?auto=format&fit=crop&q=80&w=2000" alt="Forest" className="w-full h-full object-cover" referrerPolicy="no-referrer" />
+          <img src={PHOTOS[0]} alt="Tree work" className="w-full h-full object-cover" referrerPolicy="no-referrer" />
           <div className="absolute inset-0 bg-gradient-to-b from-transparent to-brand-black" />
         </div>
         <div className="relative z-10 max-w-7xl mx-auto px-4 text-center">
@@ -45,8 +55,8 @@ export default function About() {
               <div className="absolute -top-6 -left-6 w-32 h-32 border-t-8 border-l-8 border-brand-orange z-10" />
               <div className="relative aspect-[4/5] overflow-hidden rounded-2xl shadow-2xl">
                 <img 
-                  src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=800" 
-                  alt="Jared Huskey" 
+                  src={PHOTOS[1]} 
+                  alt="Huskey's Tree Service" 
                   className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-1000"
                   referrerPolicy="no-referrer"
                 />
@@ -173,8 +183,8 @@ export default function About() {
               </div>
             </div>
             <div className="grid grid-cols-2 gap-4">
-              <img src="https://picsum.photos/seed/tn1/600/800" alt="Tennessee Landscape" className="rounded-xl aspect-[3/4] object-cover" referrerPolicy="no-referrer" />
-              <img src="https://picsum.photos/seed/tn2/600/800" alt="Tree Work" className="rounded-xl aspect-[3/4] object-cover mt-12" referrerPolicy="no-referrer" />
+              <img src={PHOTOS[5]} alt="Huskey's Tree Service work" className="rounded-xl aspect-[3/4] object-cover" referrerPolicy="no-referrer" />
+              <img src={PHOTOS[6]} alt="Huskey's Tree Service work" className="rounded-xl aspect-[3/4] object-cover mt-12" referrerPolicy="no-referrer" />
             </div>
           </div>
         </div>

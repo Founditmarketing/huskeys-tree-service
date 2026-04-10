@@ -28,7 +28,7 @@ export default function Contact() {
       {/* Page Header */}
       <section className="relative pt-40 pb-20 overflow-hidden">
         <div className="absolute inset-0 opacity-20">
-          <img src="https://images.unsplash.com/photo-1542273917363-3b1817f69a2d?auto=format&fit=crop&q=80&w=2000" alt="Forest" className="w-full h-full object-cover" referrerPolicy="no-referrer" />
+          <img src="https://lh3.googleusercontent.com/geougc-cs/ABOP9ptcu8bxwVCQxGqES3fThAfFmhoEQPpjgWM71G_NHdsybYlJHAVj1f6WBJYtl_jSPJgdSvnMNQ-NdWQrNXO4qeINloKaS-fiSUvEbmjPVoRjaucTDqXf7Fvno4UlR_oNuFglN2Zl0YSe7u_X" alt="Tree work" className="w-full h-full object-cover" referrerPolicy="no-referrer" />
           <div className="absolute inset-0 bg-gradient-to-b from-transparent to-brand-black" />
         </div>
         <div className="relative z-10 max-w-7xl mx-auto px-4 text-center">

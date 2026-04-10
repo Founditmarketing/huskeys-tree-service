@@ -65,7 +65,7 @@ export default function Reviews() {
       {/* Page Header */}
       <section className="relative pt-40 pb-20 overflow-hidden">
         <div className="absolute inset-0 opacity-20">
-          <img src="https://images.unsplash.com/photo-1542273917363-3b1817f69a2d?auto=format&fit=crop&q=80&w=2000" alt="Forest" className="w-full h-full object-cover" referrerPolicy="no-referrer" />
+          <img src="https://lh3.googleusercontent.com/geougc-cs/ABOP9pvh6DhpokLOB7Q6CXVy-UW18W2yl9seRCNX4n1EN9JSgEJtGh-SIOVOme25gTfi2-T-1WQiVe5mzx2brLM8WR27o94AtGcA71C2Xcl9Lf3XKr-HqBEirKQN9usnGOdf3kI37V_grcHDrcqb" alt="Tree work" className="w-full h-full object-cover" referrerPolicy="no-referrer" />
           <div className="absolute inset-0 bg-gradient-to-b from-transparent to-brand-black" />
         </div>
         <div className="relative z-10 max-w-7xl mx-auto px-4 text-center">
