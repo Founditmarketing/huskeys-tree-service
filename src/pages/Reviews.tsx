@@ -6,51 +6,75 @@ import Section from '../components/Section';
 const reviews = [
   {
     id: 1,
-    name: "Robert Miller",
-    location: "Clarksville, TN",
-    text: "Jared and his crew did an amazing job removing a massive oak tree that was leaning over our house. Professional, fast, and left the yard cleaner than they found it. Highly recommend Huskey's for any tree work.",
-    rating: 5,
-    date: "2 months ago"
-  },
-  {
-    id: 2,
-    name: "Sarah Jenkins",
-    location: "Woodlawn, TN",
-    text: "Best tree service in the area. They were out the next day for an emergency limb removal after a storm. Fair pricing and excellent communication throughout the process.",
+    name: "Kimberly Binkley",
+    location: "Google Review",
+    text: "I would highly recommend these guys they went above and beyond an did a fantastic job at removing over 10 trees on my property including a huge elephant tree in the middle of my house they were very professional an careful an respectful of my property they did a great job.",
     rating: 5,
     date: "1 month ago"
   },
   {
-    id: 3,
-    name: "David Thompson",
-    location: "Sango, TN",
-    text: "Huskey's Tree Service is the only company I trust. They've done trimming and stump grinding for us multiple times. 30 years of experience really shows in their precision.",
+    id: 2,
+    name: "Jason Keatts",
+    location: "Google Review",
+    text: "Outright amazing job. I hired this crew to trim enough weight off of both sides of a tree, so that the tree might not collapse during the potential ice storms of the winter. They showed up on time. Did the job at a fair and competitive price. They also did it quickly. Very courteous and prompt guys to deal with as well. I highly recommend them.",
     rating: 5,
-    date: "3 weeks ago"
+    date: "6 months ago"
+  },
+  {
+    id: 3,
+    name: "Constanze Mendoza",
+    location: "Google Review",
+    text: "Jared and his crew did an amazing job cutting down this monster. Mind you. It was over solar panels, AC unit, she shed and a wooden privacy fence. Was I scared. You bet. Did I need to be. No sir. Went to work in the morning and when I came home it was gone. Not a branch or leaf in sight. Cleaned up and took everything with them.",
+    rating: 5,
+    date: "11 months ago"
   },
   {
     id: 4,
-    name: "Linda Williams",
-    location: "Springfield, TN",
-    text: "Very impressed with the lot clearing they did for our new build. They were efficient and the price was exactly as quoted. Great local business!",
+    name: "Davy D",
+    location: "Google Review",
+    text: "I needed a tree removed so I call them and within the hour they were here, gave me a quote which was half the price of the other guys. I literally went to use the bathroom and when I was out, the tree was out of the ground and in the wood chipper. To say I was impressed is an understatement. I HIGHLY recommend these guys they're efficient, friendly, and very safe. 10/10.",
     rating: 5,
-    date: "4 months ago"
+    date: "2 weeks ago"
   },
   {
     id: 5,
-    name: "Michael Chen",
-    location: "Fort Campbell, KY",
-    text: "Excellent service. They removed three dead pines near my driveway. The crew was safe and professional. I'll definitely be calling them again for future work.",
+    name: "Paul McLaughlin",
+    location: "Google Review",
+    text: "I have used Huskey's Tree Service several times since 2020 and will not use any other tree service company. Jared is prompt, professional, and reasonably priced. Something else that is very important to me is that Jared (the owner) has always been on site with his crew to ensure everything is done properly.",
     rating: 5,
     date: "5 months ago"
   },
   {
     id: 6,
-    name: "Karen Smith",
-    location: "Dover, TN",
-    text: "Jared is a true professional. He explained exactly what needed to be done and why. The trimming they did on our maples looks fantastic.",
+    name: "Shelby Gorden",
+    location: "Google Review",
+    text: "I highly recommend Huskey's Tree Service. Jared was super responsive and kind during our estimate and all through our scheduled work. The crew was professional, did amazing work and left our property cleaner than before they started. We had several large trees removed and stumps ground and they made sure that all of the debris was gone.",
     rating: 5,
-    date: "6 months ago"
+    date: "11 months ago"
+  },
+  {
+    id: 7,
+    name: "Thanh Hutcheson",
+    location: "Google Review",
+    text: "Highly recommend Jared! He was incredibly professional, kind, and fair with his pricing. He arrived when he said he would, and was done in a very timely manner. He was very safe with his cutting and the clean up was top-notch—he left our yard better than he found it.",
+    rating: 5,
+    date: "4 months ago"
+  },
+  {
+    id: 8,
+    name: "Donny Petrie",
+    location: "Google Review",
+    text: "The team from Huskey's removed two large Maples and one very large oak, lifted the rest of our trees, ground all of our stumps, and left the site neat and clean. They were very professional, extremely hard working, communicated well and offered a fair price for all of the work.",
+    rating: 5,
+    date: "5 months ago"
+  },
+  {
+    id: 9,
+    name: "Roger G",
+    location: "Google Review",
+    text: "Awesome! I could not be happier. Two men did in 40 minutes what I thought would take 2 hours to complete. They removed the tree and the debris in minutes. Jared and Skyler were very polite and respectful. Thank you guys.",
+    rating: 5,
+    date: "10 months ago"
   }
 ];
 

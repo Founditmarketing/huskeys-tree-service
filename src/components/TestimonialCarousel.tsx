@@ -4,21 +4,21 @@ import { Star, Quote } from 'lucide-react';
 
 const testimonials = [
   {
-    name: "Robert Miller",
-    location: "Clarksville, TN",
-    text: "Jared and his crew did an amazing job removing a massive oak tree that was leaning over our house. Professional, fast, and left the yard cleaner than they found it.",
+    name: "Davy D",
+    location: "Google Review",
+    text: "I needed a tree removed so I call them and within the hour they were here, gave me a quote which was half the price of the other guys. I literally went to use the bathroom and when I was out, the tree was out of the ground and in the wood chipper. To say I was impressed is an understatement.",
     rating: 5
   },
   {
-    name: "Sarah Jenkins",
-    location: "Woodlawn, TN",
-    text: "Best tree service in the area. They were out the next day for an emergency limb removal after a storm. Fair pricing and excellent communication.",
+    name: "Constanze Mendoza",
+    location: "Google Review",
+    text: "Jared and his crew did an amazing job cutting down this monster. It was over solar panels, AC unit, she shed and a wooden privacy fence. Went to work in the morning and when I came home it was gone. Not a branch or leaf in sight.",
     rating: 5
   },
   {
-    name: "David Thompson",
-    location: "Sango, TN",
-    text: "Huskey's Tree Service is the only company I trust. They've done trimming and stump grinding for us multiple times. 30 years of experience really shows.",
+    name: "Paul McLaughlin",
+    location: "Google Review",
+    text: "I have used Huskey's Tree Service several times since 2020 and will not use any other tree service company. Jared is prompt, professional, and reasonably priced. The owner has always been on site with his crew to ensure everything is done properly.",
     rating: 5
   }
 ];
