@@ -2,12 +2,12 @@ import { motion } from 'motion/react';
 import { 
   Trees, 
   Scissors, 
-  Zap, 
-  Maximize, 
+  CircleDot, 
   Trash2, 
   Flame,
   CheckCircle2,
-  ArrowRight
+  ArrowRight,
+  AlertTriangle
 } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import SEO from '../components/SEO';
@@ -34,7 +34,7 @@ const services = [
   {
     id: 'emergency',
     title: '24/7 Emergency Service',
-    icon: <Zap size={48} />,
+    icon: <AlertTriangle size={48} />,
     desc: 'Storms don\'t wait for business hours. When a tree falls on your home, car, or power lines, our crew is ready to respond immediately to mitigate damage and restore safety.',
     features: ['Storm Damage Response', 'Hazardous Limb Removal', 'Insurance Claim Assistance', 'Rapid Mobilization'],
     img: 'https://images.unsplash.com/photo-1520114878144-6123749968dd?auto=format&fit=crop&q=80&w=1000'
@@ -42,7 +42,7 @@ const services = [
   {
     id: 'stump',
     title: 'Stump Grinding',
-    icon: <Maximize size={48} />,
+    icon: <CircleDot size={48} />,
     desc: 'Don\'t let old stumps ruin your curb appeal or attract pests. We use high-powered grinders to turn stumps into mulch, allowing you to replant or regrass the area.',
     features: ['Deep Root Grinding', 'Surface Root Removal', 'Mulch Backfilling', 'Site Restoration'],
     img: 'https://images.unsplash.com/photo-1502082553048-f009c37129b9?auto=format&fit=crop&q=80&w=1000'

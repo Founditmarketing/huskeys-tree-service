@@ -11,12 +11,13 @@ import {
   Trees, 
   Scissors, 
   Flame, 
-  Maximize, 
+  CircleDot, 
   Trash2,
   MapPin,
   Phone,
   Mail,
-  User
+  User,
+  AlertTriangle
 } from 'lucide-react';
 import SEO from '../components/SEO';
 import Section from '../components/Section';
@@ -196,8 +197,8 @@ export default function Home() {
             {[
               { title: "Tree Removal", icon: <Trees size={40} />, desc: "Safe and efficient removal of trees of any size, even in tight spaces." },
               { title: "Tree Trimming", icon: <Scissors size={40} />, desc: "Professional pruning to enhance health, safety, and aesthetic appeal." },
-              { title: "Emergency Service", icon: <Zap size={40} />, desc: "24/7 storm damage response to protect your property when it matters most." },
-              { title: "Stump Grinding", icon: <Maximize size={40} />, desc: "Complete removal of unsightly stumps to reclaim your landscape." },
+              { title: "Emergency Service", icon: <AlertTriangle size={40} />, desc: "24/7 storm damage response to protect your property when it matters most." },
+              { title: "Stump Grinding", icon: <CircleDot size={40} />, desc: "Complete removal of unsightly stumps to reclaim your landscape." },
               { title: "Lot Clearing", icon: <Trash2 size={40} />, desc: "Large-scale clearing for new construction or property expansion." },
               { title: "Firewood", icon: <Flame size={40} />, desc: "Premium seasoned firewood, cut and split for your convenience." },
             ].map((service, i) => (
