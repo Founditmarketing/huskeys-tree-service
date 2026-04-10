@@ -1,5 +1,5 @@
 import { motion } from 'motion/react';
-import { Calendar, User, ArrowRight, Tag, Search } from 'lucide-react';
+import { Calendar, User, ArrowRight, Tag } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import SEO from '../components/SEO';
 import Section from '../components/Section';
@@ -129,46 +129,28 @@ export default function Blog() {
 
             {/* Sidebar */}
             <aside className="space-y-12">
-              {/* Search */}
-              <div className="bg-brand-gray p-8 rounded-3xl border border-white/5">
-                <h3 className="text-xl mb-6 font-display">Search Blog</h3>
-                <div className="relative">
-                  <input 
-                    type="text" 
-                    placeholder="Search articles..." 
-                    className="w-full bg-brand-black border border-white/10 rounded-xl px-6 py-4 focus:outline-none focus:border-brand-orange transition-all"
-                  />
-                  <Search className="absolute right-6 top-1/2 -translate-y-1/2 text-gray-500" size={20} />
-                </div>
-              </div>
-
               {/* Categories */}
               <div className="bg-brand-gray p-8 rounded-3xl border border-white/5">
                 <h3 className="text-xl mb-6 font-display">Categories</h3>
                 <div className="space-y-4">
-                  {['Tree Care', 'Safety', 'Maintenance', 'Emergency', 'Stump Grinding'].map((cat) => (
-                    <button key={cat} className="flex items-center justify-between w-full text-gray-400 hover:text-brand-orange transition-colors group">
-                      <span className="flex items-center gap-3"><Tag size={16} /> {cat}</span>
-                      <span className="text-xs bg-brand-black px-2 py-1 rounded border border-white/5 group-hover:border-brand-orange/30 transition-all">12</span>
-                    </button>
+                  {['Tree Care', 'Safety', 'Services', 'Maintenance'].map((cat) => (
+                    <span key={cat} className="flex items-center gap-3 text-gray-400">
+                      <Tag size={16} className="text-brand-orange" /> {cat}
+                    </span>
                   ))}
                 </div>
               </div>
 
-              {/* Newsletter */}
+              {/* CTA */}
               <div className="bg-brand-orange p-8 rounded-3xl text-brand-black">
-                <h3 className="text-2xl mb-4 font-display">Tree Care Tips</h3>
-                <p className="font-medium mb-6 opacity-80">Get seasonal maintenance advice delivered to your inbox.</p>
-                <form className="space-y-4">
-                  <input 
-                    type="email" 
-                    placeholder="Email Address" 
-                    className="w-full bg-white/20 border border-brand-black/10 rounded-xl px-6 py-4 placeholder:text-brand-black/50 focus:outline-none focus:bg-white transition-all"
-                  />
-                  <button className="w-full bg-brand-black text-white py-4 rounded-xl font-bold uppercase tracking-widest hover:bg-white hover:text-brand-black transition-all">
-                    Subscribe
-                  </button>
-                </form>
+                <h3 className="text-2xl mb-4 font-display">Need Tree Work?</h3>
+                <p className="font-medium mb-6 opacity-80">Call Jared directly for a free on-site estimate.</p>
+                <a 
+                  href="tel:931-241-2515" 
+                  className="w-full bg-brand-black text-white py-4 rounded-xl font-bold uppercase tracking-widest hover:bg-white hover:text-brand-black transition-all block text-center"
+                >
+                  931-241-2515
+                </a>
               </div>
             </aside>
           </div>

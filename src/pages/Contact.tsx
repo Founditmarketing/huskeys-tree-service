@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'motion/react';
-import { Phone, Mail, MapPin, Clock, Facebook, Send, Upload, CheckCircle2 } from 'lucide-react';
+import { Phone, Mail, MapPin, Clock, Facebook, Send, CheckCircle2 } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 import SEO from '../components/SEO';
 import Section from '../components/Section';
@@ -9,13 +9,24 @@ export default function Contact() {
   const navigate = useNavigate();
   const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsSubmitting(true);
-    // Simulate form submission
-    setTimeout(() => {
+    
+    const formData = new FormData(e.currentTarget);
+    formData.append('_subject', 'New Quote Request - Huskey\'s Tree Service Website');
+    formData.append('_captcha', 'false');
+    formData.append('_template', 'table');
+    
+    try {
+      await fetch('https://formsubmit.co/ajax/thehuskeytreeservice@gmail.com', {
+        method: 'POST',
+        body: formData,
+      });
       navigate('/thank-you');
-    }, 1500);
+    } catch {
+      navigate('/thank-you');
+    }
   };
 
   return (
@@ -125,8 +136,9 @@ export default function Contact() {
                     <label className="text-xs font-bold uppercase tracking-widest text-gray-500">Full Name</label>
                     <input 
                       required
+                      name="name"
                       type="text" 
-                      placeholder="Jared Huskey" 
+                      placeholder="Your Name" 
                       className="w-full bg-brand-black border border-white/10 rounded-lg px-4 py-4 focus:border-brand-orange outline-none transition-all"
                     />
                   </div>
@@ -134,8 +146,9 @@ export default function Contact() {
                     <label className="text-xs font-bold uppercase tracking-widest text-gray-500">Phone Number</label>
                     <input 
                       required
+                      name="phone"
                       type="tel" 
-                      placeholder="931-241-2515" 
+                      placeholder="(931) 555-1234" 
                       className="w-full bg-brand-black border border-white/10 rounded-lg px-4 py-4 focus:border-brand-orange outline-none transition-all"
                     />
                   </div>
@@ -143,14 +156,15 @@ export default function Contact() {
                     <label className="text-xs font-bold uppercase tracking-widest text-gray-500">Email Address</label>
                     <input 
                       required
+                      name="email"
                       type="email" 
-                      placeholder="name@example.com" 
+                      placeholder="you@email.com" 
                       className="w-full bg-brand-black border border-white/10 rounded-lg px-4 py-4 focus:border-brand-orange outline-none transition-all"
                     />
                   </div>
                   <div className="space-y-2">
                     <label className="text-xs font-bold uppercase tracking-widest text-gray-500">Service Type</label>
-                    <select className="w-full bg-brand-black border border-white/10 rounded-lg px-4 py-4 focus:border-brand-orange outline-none transition-all appearance-none">
+                    <select name="service" className="w-full bg-brand-black border border-white/10 rounded-lg px-4 py-4 focus:border-brand-orange outline-none transition-all appearance-none">
                       <option>Tree Removal</option>
                       <option>Tree Trimming</option>
                       <option>Emergency Service</option>
@@ -164,6 +178,7 @@ export default function Contact() {
                     <label className="text-xs font-bold uppercase tracking-widest text-gray-500">Project Address / Area</label>
                     <input 
                       required
+                      name="address"
                       type="text" 
                       placeholder="123 Main St, Clarksville, TN" 
                       className="w-full bg-brand-black border border-white/10 rounded-lg px-4 py-4 focus:border-brand-orange outline-none transition-all"
@@ -174,7 +189,7 @@ export default function Contact() {
                     <div className="flex gap-4">
                       {['AM', 'PM', 'Anytime'].map((time) => (
                         <label key={time} className="flex-1">
-                          <input type="radio" name="time" className="hidden peer" />
+                          <input type="radio" name="preferred_time" value={time} className="hidden peer" />
                           <div className="text-center py-3 border border-white/10 rounded-lg cursor-pointer peer-checked:bg-brand-orange peer-checked:border-brand-orange transition-all text-sm font-bold">
                             {time}
                           </div>
@@ -182,21 +197,11 @@ export default function Contact() {
                       ))}
                     </div>
                   </div>
-                  <div className="space-y-2">
-                    <label className="text-xs font-bold uppercase tracking-widest text-gray-500">Photo Upload (Optional)</label>
-                    <div className="relative">
-                      <input type="file" className="hidden" id="photo-upload" />
-                      <label 
-                        htmlFor="photo-upload" 
-                        className="flex items-center justify-center gap-2 w-full bg-brand-black border border-white/10 border-dashed rounded-lg px-4 py-3.5 cursor-pointer hover:border-brand-orange transition-all text-sm text-gray-400"
-                      >
-                        <Upload size={18} /> Upload Photo
-                      </label>
-                    </div>
-                  </div>
+
                   <div className="space-y-2 md:col-span-2">
                     <label className="text-xs font-bold uppercase tracking-widest text-gray-500">Message / Project Details</label>
                     <textarea 
+                      name="message"
                       rows={4}
                       placeholder="Tell us about your trees..." 
                       className="w-full bg-brand-black border border-white/10 rounded-lg px-4 py-4 focus:border-brand-orange outline-none transition-all resize-none"
