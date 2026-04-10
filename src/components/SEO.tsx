@@ -55,19 +55,6 @@ export default function SEO({
             "latitude": 36.5167,
             "longitude": -87.4833
           },
-          "openingHoursSpecification": {
-            "@type": "OpeningHoursSpecification",
-            "dayOfWeek": [
-              "Monday",
-              "Tuesday",
-              "Wednesday",
-              "Thursday",
-              "Friday",
-              "Saturday"
-            ],
-            "opens": "07:00",
-            "closes": "18:00"
-          },
           "sameAs": [
             "https://www.facebook.com/HuskeysTreeService"
           ]

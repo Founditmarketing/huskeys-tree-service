@@ -100,19 +100,15 @@ export default function Contact() {
               </div>
 
               <div>
-                <h3 className="text-xl mb-6">Business Hours</h3>
+                <h3 className="text-xl mb-6">Availability</h3>
                 <div className="space-y-3">
                   <div className="flex justify-between text-gray-400">
-                    <span>Mon - Fri</span>
-                    <span className="text-white font-bold">7:00 AM - 6:00 PM</span>
+                    <span>Mon - Sat</span>
+                    <span className="text-white font-bold">By Appointment</span>
                   </div>
                   <div className="flex justify-between text-gray-400">
-                    <span>Saturday</span>
-                    <span className="text-white font-bold">8:00 AM - 4:00 PM</span>
-                  </div>
-                  <div className="flex justify-between text-gray-400">
-                    <span>Sunday</span>
-                    <span className="text-brand-orange font-bold">Emergency Only</span>
+                    <span>Emergencies</span>
+                    <span className="text-brand-orange font-bold">24/7</span>
                   </div>
                 </div>
               </div>

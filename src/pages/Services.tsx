@@ -165,52 +165,23 @@ export default function Services() {
       ))}
     </div>
 
-      {/* Firewood Pricing */}
+      {/* Firewood Section */}
       <Section className="bg-brand-gray border-t border-white/5">
-        <div className="max-w-7xl mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-6xl mb-4">Firewood <span className="text-brand-orange">Pricing</span></h2>
-            <p className="text-xl text-gray-400 max-w-2xl mx-auto">Seasoned, split, and ready to burn. Premium hardwood mix available for pickup or delivery.</p>
+        <div className="max-w-4xl mx-auto px-4 text-center">
+          <div className="inline-flex items-center justify-center w-20 h-20 bg-brand-orange/10 rounded-full text-brand-orange mb-8">
+            <Flame size={40} />
           </div>
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 mb-12">
-            {[
-              { title: 'Face Cord', price: '$125', desc: 'Perfect for occasional weekend fires. 4ft high by 8ft long, one log deep (approx 16").', features: ['Seasoned Hardwood', 'Easy to Stack', 'Pickup or Delivery'] },
-              { title: 'Full Cord', price: '$350', desc: 'The standard for winter heating. 4ft high by 4ft wide by 8ft long (128 cubic feet).', features: ['Best Value', 'Bulk Discount', 'Free Local Delivery'] },
-              { title: 'Pickup Load', price: '$75', desc: "Fill your own truck bed. We'll help you load it up at our Woodlawn location.", features: ['No Delivery Fee', 'Choose Your Logs', 'Quick & Easy'] },
-            ].map((product, i) => (
-              <motion.div
-                key={product.title}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: i * 0.1 }}
-                className="bg-brand-black rounded-3xl overflow-hidden border border-white/5 p-10 flex flex-col group hover:border-brand-orange/30 transition-all"
-              >
-                <div className="flex justify-between items-start mb-6">
-                  <h3 className="text-3xl font-display">{product.title}</h3>
-                  <span className="text-2xl font-display text-brand-orange">{product.price}</span>
-                </div>
-                <p className="text-gray-400 mb-8 leading-relaxed">{product.desc}</p>
-                <ul className="space-y-3 mb-10 mt-auto">
-                  {product.features.map((feature) => (
-                    <li key={feature} className="flex items-center gap-3 text-sm font-bold uppercase tracking-widest text-gray-300">
-                      <CheckCircle2 className="text-brand-orange" size={18} />
-                      {feature}
-                    </li>
-                  ))}
-                </ul>
-                <a 
-                  href="tel:931-241-2515" 
-                  className="w-full bg-brand-orange text-white py-4 rounded-xl font-display text-xl text-center hover:bg-white hover:text-brand-black transition-all flex items-center justify-center gap-3"
-                >
-                  <Flame size={20} /> Order Now
-                </a>
-              </motion.div>
-            ))}
-          </div>
-          <div className="text-center">
-            <p className="text-gray-400 max-w-2xl mx-auto">Not all firewood is created equal. Our wood is seasoned 6+ months for low moisture, more heat, less smoke, and a safer fire for your chimney. <strong className="text-white">100% hardwood — Oak, Hickory, and Ash mix.</strong></p>
-          </div>
+          <h2 className="text-4xl md:text-6xl mb-4">Premium <span className="text-brand-orange">Firewood</span></h2>
+          <p className="text-xl text-gray-400 max-w-2xl mx-auto mb-4">
+            Seasoned, split, and ready to burn. We offer face cords, full cords, and pickup loads of premium hardwood mix — Oak, Hickory, and Ash.
+          </p>
+          <p className="text-gray-500 mb-10">Available for delivery or pickup at our Woodlawn location.</p>
+          <a 
+            href="tel:931-241-2515" 
+            className="bg-brand-orange text-white px-12 py-5 rounded font-display text-2xl hover:bg-white hover:text-brand-black transition-all shadow-2xl inline-flex items-center gap-3"
+          >
+            Call for Pricing
+          </a>
         </div>
       </Section>
 
