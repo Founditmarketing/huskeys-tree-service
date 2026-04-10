@@ -331,7 +331,7 @@ export default function Home() {
                 ))}
               </div>
 
-              <Link to="/service-area" className="inline-flex items-center gap-2 bg-brand-orange text-white px-8 py-4 rounded font-bold uppercase tracking-widest hover:bg-white hover:text-brand-black transition-all">
+              <Link to="/contact" className="inline-flex items-center gap-2 bg-brand-orange text-white px-8 py-4 rounded font-bold uppercase tracking-widest hover:bg-white hover:text-brand-black transition-all">
                 See If We Serve Your Area <ChevronRight size={20} />
               </Link>
             </div>
@@ -446,7 +446,7 @@ export default function Home() {
               ))}
             </div>
 
-            <Link to="/firewood" className="inline-flex items-center gap-2 bg-brand-orange text-white px-10 py-5 rounded font-display text-xl hover:bg-white hover:text-brand-black transition-all">
+            <Link to="/services" className="inline-flex items-center gap-2 bg-brand-orange text-white px-10 py-5 rounded font-display text-xl hover:bg-white hover:text-brand-black transition-all">
               Order Firewood <ChevronRight size={24} />
             </Link>
           </div>

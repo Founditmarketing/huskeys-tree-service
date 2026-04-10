@@ -12,10 +12,8 @@ const navLinks = [
   { name: 'Home', href: '/' },
   { name: 'Services', href: '/services' },
   { name: 'About', href: '/about' },
-  { name: 'Service Area', href: '/service-area' },
   { name: 'Gallery', href: '/gallery' },
   { name: 'Reviews', href: '/reviews' },
-  { name: 'Firewood', href: '/firewood' },
   { name: 'Blog', href: '/blog' },
   { name: 'Contact', href: '/contact' },
 ];

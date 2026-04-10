@@ -224,6 +224,41 @@ export default function Contact() {
         </div>
       </Section>
 
+      {/* Service Area */}
+      <Section className="bg-brand-gray border-t border-white/5">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-6xl mb-4">Service <span className="text-brand-orange">Area</span></h2>
+            <p className="text-xl text-gray-400 max-w-2xl mx-auto">Based in Woodlawn, TN, we serve a 50-mile radius surrounding Clarksville.</p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
+            {[
+              { name: 'Clarksville', state: 'TN', zip: '37040' },
+              { name: 'Springfield', state: 'TN', zip: '37172' },
+              { name: 'Hopkinsville', state: 'KY', zip: '42240' },
+              { name: 'Fort Campbell', state: 'KY/TN', zip: '42223' },
+              { name: 'Woodlawn', state: 'TN', zip: '37191' },
+              { name: 'Dover', state: 'TN', zip: '37058' },
+              { name: 'Erin', state: 'TN', zip: '37175' },
+              { name: 'Adams', state: 'TN', zip: '37010' },
+              { name: 'Pleasant View', state: 'TN', zip: '37146' },
+              { name: 'White House', state: 'TN', zip: '37188' },
+            ].map((city) => (
+              <div key={city.name} className="flex items-center justify-between bg-brand-black p-5 rounded-xl border border-white/5 hover:border-brand-orange/30 transition-all">
+                <div className="flex items-center gap-3">
+                  <CheckCircle2 className="text-brand-orange" size={20} />
+                  <span className="font-bold">{city.name}, {city.state}</span>
+                </div>
+                <span className="text-xs text-gray-500 font-bold tracking-wider">{city.zip}</span>
+              </div>
+            ))}
+          </div>
+          <div className="text-center">
+            <p className="text-gray-400">Don't see your city? If you're within 50 miles of Clarksville, we likely serve you. <a href="tel:931-241-2515" className="text-brand-orange font-bold hover:text-white transition-colors">Call to confirm →</a></p>
+          </div>
+        </div>
+      </Section>
+
       {/* Map Section */}
       <section className="h-[500px] w-full bg-brand-gray relative grayscale hover:grayscale-0 transition-all duration-1000">
         <iframe 
