@@ -33,6 +33,8 @@ const PHOTOS = [
   'https://lh3.googleusercontent.com/geougc-cs/ABOP9puLEUa6xvWZXDyHEvAv_IDDcZjBbl84OGBnI8DfqR6e1b79zPR-HZ-CbqvIaCDuSljmHh2UbVHGQdkUNjD_MbBosfddaWNA9S7vw5MKRD-5CdaRNfr0aXhLzYhC376Tl3keT115ESLlDDhr',
   'https://lh3.googleusercontent.com/geougc-cs/ABOP9ptsZP7ey6JJ7JkG0-_NUH9xi08X-_dvucL-nqvnm_koFinLyXFZobrzIEzKQ_L1qY4UBe6kq2_8uMrKG4bFGD124zi1Ywemf3R5gj0W6su09AY6pFUksXooKvPcg9gOIU8O8-l9',
   'https://lh3.googleusercontent.com/geougc-cs/ABOP9pvB8hp6jpWpPjnneoSR29d4orUv6QjLycl22C9fatAUiacAwOzegp7LPOxFN-ZfVXysisu8h2E5AxjeNbG3-YegWQvasSEmQ2cz9UG0E1ZiFipfv7FPC0lcMmpmzibNgw_SAm1Dcg',
+  'https://lh3.googleusercontent.com/geougc-cs/ABOP9pvxv4lkTMcZ8ckRlsj6hwBM6iSxMl2Ke6skKDB5Cvolw0CtaHcGtSfXqsY5eapS-3v_JVrTuVQySu8d6ChyVb4W3O6eqVq1lE0ygogI4XfrFL4mx-UsUJCI9EPGQb3-_ggK5YUf',
+  'https://lh3.googleusercontent.com/geougc-cs/ABOP9pvJLYxs28gUEPv3B1kP2u0aocdbG-hf4jIJJO2qB-D-iykGrQPegj3dvr92PB1aZxRTmkXPoTtZi2OrsWxh_Nmu2x6hPW-5zeuwcIx8Eh8jYZ4acYKNhzopcmgjYVUcCvt1lwKIzA',
 ];
 
 const TypewriterText = ({ text, delay = 0 }: { text: string; delay?: number }) => {
